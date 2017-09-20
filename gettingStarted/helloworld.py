@@ -133,25 +133,25 @@ try:
     numbered_last_name = 3 + last_name
 except KeyError:
     print("Error finding last_name")
-except TypeError as error: #as error tells more specifics about error thrown.
+except TypeError as error:  # as error tells more specifics about error thrown.
     print("I can't add these two together!")
     print(error)
-except Exception: #handles any error that is not specifically handled above.
+except Exception:  # handles any error that is not specifically handled above.
     print("Unknown Error.")
 
 print("This code executes")
 
 #///////Other Data Types\\\\\\\\\
 
-complex #complex numbers
+complex  # complex numbers
 
-long #only in python 2 (replaced by integer in 3)
+long  # only in python 2 (replaced by integer in 3)
 
-bytes and bytearray # integers in the range of 0 to 255, a sequence of strings or other objects, etc.
+bytes and bytearray  # integers in the range of 0 to 255, a sequence of strings or other objects, etc.
 
-tuple = (3, 5, 1, "Mark") # immutable -- cannot change their values
+tuple = (3, 5, 1, "Mark")  # immutable -- cannot change their values
 
-set and frozenset #similar to list but only have unique objects.
+set and frozenset  # similar to list but only have unique objects.
 
-set([3, 2, 3, 1, 5]) == (1, 2, 3, 5) #got rid of duplicates and ordered the list
+set([3, 2, 3, 1, 5]) == (1, 2, 3, 5)  # got rid of duplicates and ordered the list
 

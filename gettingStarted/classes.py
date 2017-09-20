@@ -5,13 +5,13 @@ class Student:
 
     school_name = "G.W. Smith Elementary"
 
-    def __init__(self, name, student_id=332): # init is a constructor method. initialization.
+    def __init__(self, name, student_id=332):  # init is a constructor method. initialization.
         self.name = name
         self.student_id = student_id
         students.append(self)
 
 
-    def __str__(self): #method override.. string
+    def __str__(self):  # method override.. string
         return "Student " + self.name
 
 
@@ -23,7 +23,7 @@ class Student:
         return self.school_name
 
 
-class HighSchoolStudent(Student): #derived class(parent class)
+class HighSchoolStudent(Student):  # derived class(parent class)
 
     school_name = "Hunting Hills High School"
 

@@ -13,13 +13,20 @@ def print_students_titlecase():
 
 
 def add_student(name, student_id=332):
+
+    """
+    Adds the student to the student list.
+    :param name: string - student name
+    :param student_id: integer - optional student ID
+    :return:
+    """
     student = {"name": name, "student_id": student_id}
     students.append(student)
 
 
 def save_file(student):
     try:
-        f = open("students.txt", "a") #'a' denotes wanting to append to file. 'w' will overwrite any information.
+        f = open("students.txt", "a")  # 'a' denotes wanting to append to file. 'w' will overwrite any information.
         f.write(student + "\n")
         f.close()
     except Exception:
