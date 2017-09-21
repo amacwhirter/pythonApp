@@ -14,7 +14,7 @@ def students_page():
         new_student_name = request.form.get("name", "")
         new_student_last_name = request.form.get("last-name", "")
 
-        new_student = Student(name=new_student_name, student_id=new_student_id)
+        new_student = Student(name=new_student_name, student_id=new_student_id, last_name=new_student_last_name)
         students.append(new_student)
 
         return redirect(url_for("students_page"))
